@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node --no-warnings --watch ./src/index.ts"
+    "dev": "node --no-warnings --watch ./src/index.ts",
+    "build": "tsc --build --noEmit false"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@types/express": "^5.0.1",
-    "@types/node": "^22.14.1"
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
   }
 }
