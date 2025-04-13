@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node --no-warnings --watch ./src/index.ts",
+    "dev": "node --env-file ./.env.dev --no-warnings --watch ./src/index.ts",
     "build": "tsc --build --noEmit false"
   },
   "keywords": [],
@@ -13,10 +13,14 @@
   "license": "ISC",
   "packageManager": "pnpm@10.6.2",
   "dependencies": {
-    "express": "^5.1.0"
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "@types/cookie-parser": "^1.4.8",
     "@types/express": "^5.0.1",
+    "@types/morgan": "^1.9.9",
     "@types/node": "^22.14.1",
     "typescript": "^5.8.3"
   }
