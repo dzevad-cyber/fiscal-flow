@@ -23,5 +23,8 @@
     "@types/morgan": "^1.9.9",
     "@types/node": "^22.14.1",
     "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": "23.11.0"
   }
 }
