@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node --env-file ./.env.dev --no-warnings --watch ./src/index.ts",
+    "dev": "node --env-file ./.env.server.dev --no-warnings --watch ./src/index.ts",
     "build": "tsc --build --noEmit false"
   },
   "keywords": [],

@@ -1,0 +1,17 @@
+FROM node:23.11-alpine
+
+WORKDIR /server
+
+# install pnpm 
+RUN npm install -g pnpm@10.8.0
+
+COPY pnpm-lock.yaml package.json ./
+COPY .env.server.dev .
+
+RUN pnpm install
+
+COPY . .
+
+EXPOSE 5000
+
+CMD [ "pnpm", "dev" ]
